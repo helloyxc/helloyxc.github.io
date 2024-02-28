@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="converter.css">
   </head>
   <body>
+    <div id="clickCount">Click Count1: 0</div>
+    <button id="dynamic-link">Open My Android App</button>
+
     <form id="converter">
-        <label for="input-temp">temperature</label>
+        <label for="input-temp">Temperature</label>
         <input type="text" id="input-temp" name="input-temp" value="20" />
-        <label for="input-unit">from</label>
+        <label for="input-unit">From</label>
         <select id="input-unit" name="input-unit">
           <option value="c" selected>Celsius</option>
           <option value="f">Fahrenheit</option>
           <option value="k">Kelvin</option>
         </select>
-        <label for="output-unit">to</label>
+        <label for="output-unit">To</label>
         <select id="output-unit" name="output-unit">
           <option value="c">Celsius</option>
           <option value="f" selected>Fahrenheit</option>
@@ -27,6 +30,7 @@
         <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
       </form>
       <script src="converter.js"></script>
+      <script src="dynamicLink.js"></script>
   </body>
   <script>
   // 检测浏览器是否支持SW
